@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/touchpadbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" 
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/flayout_touchPanel_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/touchpadbg"           
+            >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flayout_scrollArea_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/scroll"
+            
+            android:layout_weight="1" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/left"
+            android:text="左键" />
+
+        <Button
+            android:id="@+id/btn_testtxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="测试文字" />
+
+        <Button
+            android:id="@+id/btn_right_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/right"
+            android:layout_weight="1"
+            android:text="右键" />
+    </LinearLayout>
+
+</LinearLayout>
